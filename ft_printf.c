@@ -28,21 +28,8 @@ int		ft_printf(const char *format, ...)
 	return(0);
 }
 
-void MyPrintf(const char* format, ...)
-{
-  va_list args;
-  char buffer[200];
-  int x;
-
-  x = 0;
-  va_start(args,format);
-  vsprintf (buffer, format, args );
-  va_end(args);
-}
-
 int main()
 {
-	MyPrintf("%s\n", "hello");
 	ft_printf("%s\n", "hello");
 	printf("%s\n", "hello");
 	return(0);
